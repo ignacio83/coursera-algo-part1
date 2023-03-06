@@ -1,5 +1,6 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HelloGoodbyeTest {
 
@@ -9,7 +10,7 @@ public class HelloGoodbyeTest {
 
 		HelloGoodbye.main(new String[]{"Kevin", "Bob"});
 
-		Assertions.assertEquals("""
+		assertEquals("""
 				Hello Kevin and Bob.
 				Goodbye Bob and Kevin.
 				""", out.toString());
@@ -21,7 +22,7 @@ public class HelloGoodbyeTest {
 
 		HelloGoodbye.main(new String[]{"Kevin", "Bob", "John"});
 
-		Assertions.assertEquals("""
+		assertEquals("""
 				Hello Kevin and Bob and John.
 				Goodbye John and Bob and Kevin.
 				""", out.toString());

@@ -1,5 +1,6 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HelloWorldTest {
 
@@ -9,7 +10,7 @@ public class HelloWorldTest {
 
 		HelloWorld.main(new String[]{});
 
-		Assertions.assertEquals("""
+		assertEquals("""
 				Hello, World
 				""", out.toString());
 	}
