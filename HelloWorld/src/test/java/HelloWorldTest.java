@@ -1,17 +1,17 @@
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class HelloWorldTest {
 
-	@Test
-	public void TestMain(){
-		var out = SystemStream.getOutput();
+  @Test
+  public void TestMain() {
+    var out = SystemStream.getOutput();
 
-		HelloWorld.main(new String[]{});
+    HelloWorld.main(new String[] {});
 
-		assertEquals("""
+    assertEquals("""
 				Hello, World
 				""", out.toString());
-	}
+  }
 }
