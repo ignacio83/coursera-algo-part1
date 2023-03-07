@@ -4,7 +4,7 @@ public class HelloGoodbye {
 		sayGoodbye(args);
 	}
 	private static void sayHello(String[]args) {
-		var sbHello = new StringBuilder("Hello ");
+		final var sbHello = new StringBuilder("Hello ");
 		for(int i=0;i<args.length;i++) {
 			sbHello.append(args[i]);
 			if(i+1 != args.length) {
@@ -17,7 +17,7 @@ public class HelloGoodbye {
 	}
 
 	private static void sayGoodbye(String[]args) {
-		var sbGoodbye = new StringBuilder("Goodbye ");
+		final var sbGoodbye = new StringBuilder("Goodbye ");
 		for(int i=args.length-1;i>-1;i--) {
 			sbGoodbye.append(args[i]);
 			if(i != 0) {
